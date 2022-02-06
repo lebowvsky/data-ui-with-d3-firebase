@@ -1,32 +1,38 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SVG Basics</title>
-</head>
-<body>
-  
-    <div class="canvas"> </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SVG Basics</title>
+  </head>
+  <body>
+    <div class="canvas"></div>
 
-    
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
     <script>
       // Initialize Firebase
       var config = {
-        apiKey: "AIzaSyBimZS4KHtAzEICqMyph25tUEpKA2lJ1e0",
-        authDomain: "d3-testing-nn.firebaseapp.com",
-        databaseURL: "https://d3-testing-nn.firebaseio.com",
-        projectId: "d3-testing-nn",
-        storageBucket: "d3-testing-nn.appspot.com",
-        messagingSenderId: "450687416936"
+        apiKey: "AIzaSyDCoGFWaq2KQoeWPxeQHttOqx7sEuVNtKA",
+        authDomain: "udemy-d3-firebase-ab839.firebaseapp.com",
+        projectId: "udemy-d3-firebase-ab839",
+        storageBucket: "udemy-d3-firebase-ab839.appspot.com",
+        messagingSenderId: "1083888635924",
+        appId: "1:1083888635924:web:d896ded72d1f5209561701",
+        measurementId: "G-D5FCYN6N0X",
       };
       firebase.initializeApp(config);
       const db = firebase.firestore();
       db.settings({ timestampsInSnapshots: true });
+      // console.log(db.collection("dishes").get());
+
+      // const fetchDishes = async () => {
+      //   const result = await db.collection("dishes").get();
+      //   console.log(result);
+      // };
+      // fetchDishes();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
