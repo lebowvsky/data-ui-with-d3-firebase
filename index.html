@@ -24,13 +24,6 @@
       firebase.initializeApp(config);
       const db = firebase.firestore();
       db.settings({ timestampsInSnapshots: true });
-      // console.log(db.collection("dishes").get());
-
-      // const fetchDishes = async () => {
-      //   const result = await db.collection("dishes").get();
-      //   console.log(result);
-      // };
-      // fetchDishes();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
     <script src="index.js"></script>
